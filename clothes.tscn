@@ -8,7 +8,7 @@ script/source = "extends Sprite2D
 var draggable = false
 var is_inside_dropable = false
 var body_ref
-var offset
+#var offset
 var initialPos: Vector2
 
 func _process(_delta):
