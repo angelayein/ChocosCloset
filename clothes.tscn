@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://bmw0gwd118yrh" path="res://Assets/shirt.png" id="2_xr3ys"]
 
 [sub_resource type="GDScript" id="GDScript_wmlug"]
-script/source = "extends Sprite2D
+script/source = "extends Node2D
 var draggable = false
 var is_inside_dropable = false
 var body_ref
-var drag_offset
+var drag_offset: Vector2
 var initialPos: Vector2
+
 
 func _process(_delta):
 	if draggable:
@@ -24,7 +25,7 @@ func _process(_delta):
 			global.is_dragging = false
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
-				tween.tween_property(self, \"position\", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
+				tween.tween_property(self, \"global_position\", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
 			else:
 				tween.tween_property(self, \"global_position\", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 
