@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://djd37wscur7jm"]
+
+[ext_resource type="PackedScene" uid="uid://h0p33d87uyet" path="res://SCENEEEEE.tscn" id="1_7qi7b"]
+[ext_resource type="PackedScene" uid="uid://cw0iqonb5ln2f" path="res://clothes.tscn" id="2_l15va"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BG" type="ColorRect" parent="."]
+offset_left = -3220.0
+offset_top = -948.0
+offset_right = 1623.0
+offset_bottom = 1567.0
+mouse_filter = 2
+color = Color(0.666439, 0.000332776, 0.666434, 1)
+
+[node name="Node2D" parent="." instance=ExtResource("1_7qi7b")]
+position = Vector2(624, 415)
+
+[node name="Node2D2" parent="." instance=ExtResource("1_7qi7b")]
+position = Vector2(909, 131)
+
+[node name="Node2D3" parent="." instance=ExtResource("1_7qi7b")]
+position = Vector2(687, 194)
+
+[node name="clothes" parent="." instance=ExtResource("2_l15va")]
+position = Vector2(280, 200)

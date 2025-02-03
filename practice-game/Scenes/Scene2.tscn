@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dsofw8wel8q2b"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Shirts" type="Sprite2D" parent="."]
+
+[node name="Pants" type="Sprite2D" parent="."]
+
+[node name="Dresses" type="Sprite2D" parent="."]
