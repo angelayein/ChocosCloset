@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/summer-background-music-295031.mp3-a1885fa8bd
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

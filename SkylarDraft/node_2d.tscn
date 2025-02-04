@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=16 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://HatGrey.png" id="9_vhypk"]
 [ext_resource type="Script" path="res://hat_grey.gd" id="10_sieij"]
 [ext_resource type="Script" path="res://pants_2.gd" id="11_77dog"]
+[ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="12_nbhjn"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
 
@@ -97,6 +98,10 @@ text = "Hats
 "
 icon = SubResource("ImageTexture_5h7gj")
 script = ExtResource("11_77dog")
+
+[node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
+stream = ExtResource("12_nbhjn")
+autoplay = true
 
 [connection signal="button_down" from="PinkBack/Shirts" to="PinkBack/Shirts" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Pants" to="PinkBack/Pants" method="_on_button_down"]
