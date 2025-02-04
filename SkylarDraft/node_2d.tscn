@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=20 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
@@ -11,7 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://HatGrey.png" id="9_vhypk"]
 [ext_resource type="Script" path="res://hat_grey.gd" id="10_sieij"]
 [ext_resource type="Script" path="res://pants_2.gd" id="11_77dog"]
+[ext_resource type="Script" path="res://crown.gd" id="12_d3kvp"]
 [ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="12_nbhjn"]
+[ext_resource type="Script" path="res://dress.gd" id="13_lprvx"]
+[ext_resource type="Texture2D" uid="uid://b833226yr6hfb" path="res://crown.png" id="14_vdcmr"]
+[ext_resource type="Texture2D" uid="uid://cjkblo3beuucg" path="res://dress.webp" id="16_djw65"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
 
@@ -99,10 +103,51 @@ text = "Hats
 icon = SubResource("ImageTexture_5h7gj")
 script = ExtResource("11_77dog")
 
+[node name="Crown" type="Button" parent="PinkBack"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 105.0
+offset_top = -290.0
+offset_right = 275.0
+offset_bottom = -214.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+text = "Crown
+"
+icon = SubResource("ImageTexture_5h7gj")
+script = ExtResource("12_d3kvp")
+
+[node name="Dress" type="Button" parent="PinkBack"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 116.0
+offset_top = -156.0
+offset_right = 286.0
+offset_bottom = -80.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+text = "Dress"
+icon = SubResource("ImageTexture_5h7gj")
+script = ExtResource("13_lprvx")
+
 [node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
 stream = ExtResource("12_nbhjn")
 autoplay = true
 
+[node name="Crown2" type="Sprite2D" parent="PinkBack"]
+position = Vector2(-30.4449, -341.418)
+scale = Vector2(0.54304, 0.54304)
+texture = ExtResource("14_vdcmr")
+
+[node name="Dress2" type="Sprite2D" parent="PinkBack"]
+position = Vector2(-16.3098, 70.6756)
+scale = Vector2(0.401087, 0.410518)
+texture = ExtResource("16_djw65")
+
 [connection signal="button_down" from="PinkBack/Shirts" to="PinkBack/Shirts" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Pants" to="PinkBack/Pants" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Hats" to="PinkBack/Hats" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Crown" to="PinkBack/Crown" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Dress" to="PinkBack/Dress" method="_on_button_down"]
