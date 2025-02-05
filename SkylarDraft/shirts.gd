@@ -1,7 +1,7 @@
 extends Button
 
 
-var visibility: bool = true
+var visibility: bool = false
 
 
 # Called when the node enters the scene tree for the first time.

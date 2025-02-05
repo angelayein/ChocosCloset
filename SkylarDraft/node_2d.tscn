@@ -21,7 +21,7 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_twppj"]
 
-[sub_resource type="ImageTexture" id="ImageTexture_5h7gj"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jbgrg"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_85hpp")
@@ -39,14 +39,16 @@ texture = ExtResource("2_8nccm")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 328.0
-offset_top = -158.0
-offset_right = 498.0
-offset_bottom = -82.0
+offset_left = 346.0
+offset_top = -167.0
+offset_right = 522.0
+offset_bottom = 26.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-text = "Shirts"
-icon = SubResource("ImageTexture_5h7gj")
+icon = ExtResource("4_7mxqf")
+flat = true
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("3_bjcgq")
 
 [node name="Pants" type="Button" parent="PinkBack"]
@@ -54,13 +56,15 @@ top_level = true
 light_mask = 3
 visibility_layer = 3
 offset_left = 328.0
-offset_top = -11.0
-offset_right = 498.0
-offset_bottom = 65.0
+offset_top = 43.0
+offset_right = 583.0
+offset_bottom = 290.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-text = "Pants"
-icon = SubResource("ImageTexture_5h7gj")
+icon = ExtResource("4_ierly")
+flat = true
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("8_uhoeq")
 
 [node name="Stick" type="Sprite2D" parent="PinkBack"]
@@ -71,18 +75,21 @@ scale = Vector2(1.15346, 1.15346)
 texture = ExtResource("3_jnssk")
 
 [node name="GreyPants" type="Sprite2D" parent="PinkBack"]
+visible = false
 position = Vector2(-27.1829, 150.05)
 scale = Vector2(0.266059, 0.29116)
 texture = ExtResource("4_ierly")
 script = ExtResource("5_areno")
 
 [node name="WhiteShirt" type="Sprite2D" parent="PinkBack"]
+visible = false
 position = Vector2(-17.3971, -46.7546)
 scale = Vector2(0.454387, 0.467224)
 texture = ExtResource("4_7mxqf")
 script = ExtResource("5_areno")
 
 [node name="HatGrey" type="Sprite2D" parent="PinkBack"]
+visible = false
 position = Vector2(-23.921, -314.235)
 scale = Vector2(0.0549558, 0.0549558)
 texture = ExtResource("9_vhypk")
@@ -92,44 +99,47 @@ script = ExtResource("10_sieij")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 326.0
+offset_left = 353.0
 offset_top = -288.0
-offset_right = 496.0
-offset_bottom = -212.0
+offset_right = 542.0
+offset_bottom = -191.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-text = "Hats
-"
-icon = SubResource("ImageTexture_5h7gj")
+icon = ExtResource("9_vhypk")
+flat = true
+expand_icon = true
 script = ExtResource("11_77dog")
 
 [node name="Crown" type="Button" parent="PinkBack"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 105.0
+offset_left = 121.0
 offset_top = -290.0
-offset_right = 275.0
-offset_bottom = -214.0
+offset_right = 280.0
+offset_bottom = -185.0
 theme = SubResource("Theme_w0ynq")
-theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-text = "Crown
-"
-icon = SubResource("ImageTexture_5h7gj")
+theme_override_styles/hover = SubResource("StyleBoxLine_jbgrg")
+icon = ExtResource("14_vdcmr")
+flat = true
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("12_d3kvp")
 
 [node name="Dress" type="Button" parent="PinkBack"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 116.0
-offset_top = -156.0
-offset_right = 286.0
-offset_bottom = -80.0
+offset_left = 97.0
+offset_top = -138.0
+offset_right = 322.0
+offset_bottom = 258.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-text = "Dress"
-icon = SubResource("ImageTexture_5h7gj")
+icon = ExtResource("16_djw65")
+flat = true
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("13_lprvx")
 
 [node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
@@ -137,11 +147,13 @@ stream = ExtResource("12_nbhjn")
 autoplay = true
 
 [node name="Crown2" type="Sprite2D" parent="PinkBack"]
+visible = false
 position = Vector2(-30.4449, -341.418)
 scale = Vector2(0.54304, 0.54304)
 texture = ExtResource("14_vdcmr")
 
 [node name="Dress2" type="Sprite2D" parent="PinkBack"]
+visible = false
 position = Vector2(-16.3098, 70.6756)
 scale = Vector2(0.401087, 0.410518)
 texture = ExtResource("16_djw65")
