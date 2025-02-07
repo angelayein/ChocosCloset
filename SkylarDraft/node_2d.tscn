@@ -1,17 +1,19 @@
-[gd_scene load_steps=16 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=18 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
-[ext_resource type="Script" path="res://shirts.gd" id="3_bjcgq"]
+[ext_resource type="Script" path="res://Shirts/shirts.gd" id="3_bjcgq"]
 [ext_resource type="Texture2D" uid="uid://do70iekuw1aq0" path="res://Stick.png" id="3_jnssk"]
 [ext_resource type="Texture2D" uid="uid://8b05eekp40x2" path="res://Shirts/WhiteShirt.png" id="4_7mxqf"]
-[ext_resource type="Texture2D" uid="uid://bcwht7ppxv2at" path="res://PantsGrey.png" id="4_ierly"]
+[ext_resource type="Texture2D" uid="uid://bcwht7ppxv2at" path="res://Pants/PantsGrey.png" id="4_ierly"]
 [ext_resource type="Script" path="res://white_shirt.gd" id="5_areno"]
-[ext_resource type="Script" path="res://pants.gd" id="8_uhoeq"]
-[ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://HatGrey.png" id="9_vhypk"]
-[ext_resource type="Script" path="res://hat_grey.gd" id="10_sieij"]
-[ext_resource type="Script" path="res://pants_2.gd" id="11_77dog"]
+[ext_resource type="Script" path="res://Clothing.gd" id="8_tr6gt"]
+[ext_resource type="Script" path="res://Pants/pants.gd" id="8_uhoeq"]
+[ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://Hats/HatGrey.png" id="9_vhypk"]
+[ext_resource type="Script" path="res://Hats/hat_grey.gd" id="10_sieij"]
+[ext_resource type="Script" path="res://Pants/Hats.gd" id="11_q0i4c"]
 [ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="12_nbhjn"]
+[ext_resource type="Texture2D" uid="uid://c7ojfwax7sd05" path="res://Hats/baseball-hat-red.png" id="13_rd1ju"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
 
@@ -31,7 +33,20 @@ position = Vector2(1, 34)
 scale = Vector2(0.919695, 0.919695)
 texture = ExtResource("2_8nccm")
 
-[node name="Shirts" type="Button" parent="PinkBack"]
+[node name="Stick" type="Sprite2D" parent="PinkBack"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-63.0644, 4.34927)
+scale = Vector2(1.15346, 1.15346)
+texture = ExtResource("3_jnssk")
+
+[node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
+stream = ExtResource("12_nbhjn")
+autoplay = true
+
+[node name="Buttons" type="Node" parent="PinkBack"]
+
+[node name="Shirts" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
@@ -45,7 +60,7 @@ text = "Shirts"
 icon = SubResource("ImageTexture_5h7gj")
 script = ExtResource("3_bjcgq")
 
-[node name="Pants" type="Button" parent="PinkBack"]
+[node name="Pants" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
@@ -59,32 +74,7 @@ text = "Pants"
 icon = SubResource("ImageTexture_5h7gj")
 script = ExtResource("8_uhoeq")
 
-[node name="Stick" type="Sprite2D" parent="PinkBack"]
-light_mask = 2
-visibility_layer = 2
-position = Vector2(-63.0644, 4.34927)
-scale = Vector2(1.15346, 1.15346)
-texture = ExtResource("3_jnssk")
-
-[node name="GreyPants" type="Sprite2D" parent="PinkBack"]
-position = Vector2(-27.1829, 150.05)
-scale = Vector2(0.266059, 0.29116)
-texture = ExtResource("4_ierly")
-script = ExtResource("5_areno")
-
-[node name="WhiteShirt" type="Sprite2D" parent="PinkBack"]
-position = Vector2(-17.3971, -46.7546)
-scale = Vector2(0.454387, 0.467224)
-texture = ExtResource("4_7mxqf")
-script = ExtResource("5_areno")
-
-[node name="HatGrey" type="Sprite2D" parent="PinkBack"]
-position = Vector2(-23.921, -314.235)
-scale = Vector2(0.0549558, 0.0549558)
-texture = ExtResource("9_vhypk")
-script = ExtResource("10_sieij")
-
-[node name="Hats" type="Button" parent="PinkBack"]
+[node name="Hats" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
@@ -97,12 +87,34 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 text = "Hats
 "
 icon = SubResource("ImageTexture_5h7gj")
-script = ExtResource("11_77dog")
+script = ExtResource("11_q0i4c")
 
-[node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
-stream = ExtResource("12_nbhjn")
-autoplay = true
+[node name="Clothes" type="Node" parent="PinkBack"]
+script = ExtResource("8_tr6gt")
 
-[connection signal="button_down" from="PinkBack/Shirts" to="PinkBack/Shirts" method="_on_button_down"]
-[connection signal="button_down" from="PinkBack/Pants" to="PinkBack/Pants" method="_on_button_down"]
-[connection signal="button_down" from="PinkBack/Hats" to="PinkBack/Hats" method="_on_button_down"]
+[node name="GreyPants" type="Sprite2D" parent="PinkBack/Clothes"]
+position = Vector2(-24, 172)
+scale = Vector2(0.244693, 0.267778)
+texture = ExtResource("4_ierly")
+script = ExtResource("5_areno")
+
+[node name="WhiteShirt" type="Sprite2D" parent="PinkBack/Clothes"]
+position = Vector2(-15, -8.99997)
+scale = Vector2(0.417897, 0.429704)
+texture = ExtResource("4_7mxqf")
+script = ExtResource("5_areno")
+
+[node name="HatGrey" type="Sprite2D" parent="PinkBack/Clothes"]
+position = Vector2(-21, -255)
+scale = Vector2(0.0505426, 0.0505426)
+texture = ExtResource("9_vhypk")
+script = ExtResource("10_sieij")
+
+[node name="Baseball-hat-red" type="Sprite2D" parent="PinkBack/Clothes"]
+position = Vector2(-36, -229)
+scale = Vector2(0.549327, 0.549327)
+texture = ExtResource("13_rd1ju")
+
+[connection signal="button_down" from="PinkBack/Buttons/Shirts" to="PinkBack/Buttons/Shirts" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Pants" to="PinkBack/Buttons/Pants" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Hats" to="PinkBack/Buttons/Hats" method="_on_button_down"]

@@ -7,6 +7,7 @@ var visibility: bool = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
+	
 # Replace with function body.
 	
 
@@ -17,12 +18,22 @@ func _process(delta: float) -> void:
 
 
 func _on_button_down() -> void:
-	print("woo!")
-	if visibility == true:
-		visibility = false
-		print("hidden")
-		$"../HatGrey".visible = false;
-	else:
-		visibility = true
-		print("visible")
-		$"../HatGrey".visible = true;
+	var index = $"../HatGrey"
+	var i : int = 0
+	print(i)
+	
+	if(index.visible == false):
+		index.visible = true
+	else: 
+		index.visible = false
+		
+	
+		
+	#if visibility == true:
+		#visibility = false
+		#print("hidden")
+		#array[i].visible = false;
+	#else:
+		#visibility = true
+		#print("visible")
+		#$"../HatGrey".visible = true;
