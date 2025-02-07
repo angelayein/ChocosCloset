@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=18 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://8b05eekp40x2" path="res://Shirts/WhiteShirt.png" id="4_7mxqf"]
 [ext_resource type="Texture2D" uid="uid://bcwht7ppxv2at" path="res://Pants/PantsGrey.png" id="4_ierly"]
 [ext_resource type="Script" path="res://white_shirt.gd" id="5_areno"]
+[ext_resource type="Script" path="res://Clothing.gd" id="8_tr6gt"]
 [ext_resource type="Script" path="res://Pants/pants.gd" id="8_uhoeq"]
 [ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://Hats/HatGrey.png" id="9_vhypk"]
 [ext_resource type="Script" path="res://Hats/hat_grey.gd" id="10_sieij"]
@@ -89,6 +90,7 @@ icon = SubResource("ImageTexture_5h7gj")
 script = ExtResource("11_q0i4c")
 
 [node name="Clothes" type="Node" parent="PinkBack"]
+script = ExtResource("8_tr6gt")
 
 [node name="GreyPants" type="Sprite2D" parent="PinkBack/Clothes"]
 position = Vector2(-24, 172)
