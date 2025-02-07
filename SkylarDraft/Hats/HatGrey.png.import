@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcwht7ppxv2at"
-path="res://.godot/imported/PantsGrey.png-c15352394cff04fb4f367365c970048c.ctex"
+uid="uid://08t7csopix5v"
+path="res://.godot/imported/HatGrey.png-0a08fefa44944f462134d9f800b8715e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PantsGrey.png"
-dest_files=["res://.godot/imported/PantsGrey.png-c15352394cff04fb4f367365c970048c.ctex"]
+source_file="res://Hats/HatGrey.png"
+dest_files=["res://.godot/imported/HatGrey.png-0a08fefa44944f462134d9f800b8715e.ctex"]
 
 [params]
 
