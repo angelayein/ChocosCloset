@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_down() -> void:
-	var index = $"../HatGrey"
+	var index = $"../../Clothes/HatGrey"
 	var i : int = 0
 	print(i)
 	

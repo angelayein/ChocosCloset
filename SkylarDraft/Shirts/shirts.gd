@@ -21,8 +21,8 @@ func _on_button_down() -> void:
 	if visibility == true:
 		visibility = false
 		print("hidden")
-		$"../WhiteShirt".visible = false;
+		$"../../Clothes/WhiteShirt".visible = false;
 	else:
 		visibility = true
 		print("visible")
-		$"../WhiteShirt".visible = true;
+		$"../../Clothes/WhiteShirt".visible = true;
