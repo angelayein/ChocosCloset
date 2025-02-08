@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7ojfwax7sd05"
-path="res://.godot/imported/baseball-hat-red.png-0acf2e13907754b7b15ce70e44909525.ctex"
+uid="uid://c0hrwux28i2jy"
+path="res://.godot/imported/pinkpants.png-12f68284ecd6b367daf0160730cd4128.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hats/baseball-hat-red.png"
-dest_files=["res://.godot/imported/baseball-hat-red.png-0acf2e13907754b7b15ce70e44909525.ctex"]
+source_file="res://Pants2/pinkpants.png"
+dest_files=["res://.godot/imported/pinkpants.png-12f68284ecd6b367daf0160730cd4128.ctex"]
 
 [params]
 

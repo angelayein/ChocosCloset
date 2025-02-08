@@ -8,7 +8,7 @@
 [node name="Player" parent="." instance=ExtResource("1_rpsyx")]
 
 [node name="Music" parent="." instance=ExtResource("2_mip30")]
-offset_left = 166.821
-offset_top = -166.825
-offset_right = 166.821
-offset_bottom = -166.825
+offset_left = -238.0
+offset_top = -126.0
+offset_right = -238.0
+offset_bottom = -126.0

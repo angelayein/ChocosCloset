@@ -1,14 +1,12 @@
 extends Button
 
-
-var visibility: bool = true
+var visibility: bool = false
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
-# Replace with function body.
-	
+	pass # Replace with function body.
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,8 +19,8 @@ func _on_button_down() -> void:
 	if visibility == true:
 		visibility = false
 		print("hidden")
-		$"../../Clothes/WhiteShirt".visible = false;
+		$"../../Clothes/Pinkpants".visible = false;
 	else:
 		visibility = true
 		print("visible")
-		$"../../Clothes/WhiteShirt".visible = true;
+		$"../../Clothes/Pinkpants".visible = true;
