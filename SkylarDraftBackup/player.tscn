@@ -1,6 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=17 format=3 uid="uid://dgqkyxtk2ohfs"]
 
-[ext_resource type="Script" path="res://node_2d.gd" id="1_85hpp"]
+[ext_resource type="Script" path="res://player.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
 [ext_resource type="Script" path="res://Shirts/shirts.gd" id="3_bjcgq"]
 [ext_resource type="Texture2D" uid="uid://do70iekuw1aq0" path="res://Stick.png" id="3_jnssk"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://Hats/HatGrey.png" id="9_vhypk"]
 [ext_resource type="Script" path="res://Hats/hat_grey.gd" id="10_sieij"]
 [ext_resource type="Script" path="res://Pants/Hats.gd" id="11_q0i4c"]
-[ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="12_nbhjn"]
 [ext_resource type="Texture2D" uid="uid://c7ojfwax7sd05" path="res://Hats/baseball-hat-red.png" id="13_rd1ju"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
@@ -39,10 +38,6 @@ visibility_layer = 2
 position = Vector2(-63.0644, 4.34927)
 scale = Vector2(1.15346, 1.15346)
 texture = ExtResource("3_jnssk")
-
-[node name="Summer-background-music-295031" type="AudioStreamPlayer" parent="PinkBack"]
-stream = ExtResource("12_nbhjn")
-autoplay = true
 
 [node name="Buttons" type="Node" parent="PinkBack"]
 

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ly5ufhn8sjh6"]
+
+[ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
+[ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_mip30"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rpsyx")]
+
+[node name="Music" parent="." instance=ExtResource("2_mip30")]
+offset_left = 166.821
+offset_top = -166.825
+offset_right = 166.821
+offset_bottom = -166.825
