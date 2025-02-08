@@ -1,8 +1,7 @@
 extends "res://button_component.gd"
 
-var visibility: bool = false
 @onready var address : Node = $"../../Clothes/Pinkpants"
-
+@onready var buttonAddress : Node = $"."
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

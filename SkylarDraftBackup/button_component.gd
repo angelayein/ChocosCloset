@@ -10,6 +10,5 @@ func run(address):
 		address.visible = true
 		print("visible")
 		
-		
-	
+
 		

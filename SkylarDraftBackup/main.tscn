@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://ly5ufhn8sjh6"]
+[gd_scene load_steps=5 format=3 uid="uid://ly5ufhn8sjh6"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
+[ext_resource type="Script" path="res://control.gd" id="2_mak3u"]
 [ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_mip30"]
 [ext_resource type="PackedScene" uid="uid://duasb3i68r6c1" path="res://menu.tscn" id="3_ae8d7"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_rpsyx")]
+script = ExtResource("2_mak3u")
 
 [node name="Music" parent="." instance=ExtResource("2_mip30")]
 offset_left = -238.0
