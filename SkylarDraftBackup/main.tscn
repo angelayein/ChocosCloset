@@ -23,9 +23,9 @@ anchor_left = 0.556021
 anchor_top = -0.273198
 anchor_right = 0.653243
 anchor_bottom = -0.0787531
-offset_left = -12.5361
+offset_left = -18.5361
 offset_top = -102.968
-offset_right = -4.53613
+offset_right = -10.5361
 offset_bottom = -80.9677
 
 [node name="Shirts3" parent="Player/PinkBack/Buttons" index="1"]
@@ -78,19 +78,19 @@ offset_right = 255.0
 offset_bottom = 44.0
 
 [node name="Hats" parent="Player/PinkBack/Buttons" index="7"]
-offset_left = 142.0
+offset_left = 140.0
 offset_top = 67.0
-offset_right = 254.0
+offset_right = 252.0
 offset_bottom = 208.0
 
 [node name="Hats2" parent="Player/PinkBack/Buttons" index="8"]
 anchor_left = -0.0607639
-anchor_right = 0.396701
-anchor_bottom = 0.5
-offset_left = 57.0
-offset_top = -321.0
-offset_right = 227.0
-offset_bottom = -229.0
+anchor_right = -0.104167
+anchor_bottom = 0.087963
+offset_left = 205.0
+offset_top = -282.0
+offset_right = 375.0
+offset_bottom = -190.0
 icon = ExtResource("2_s4v5d")
 
 [node name="ButtonComponent" parent="Player/PinkBack/Buttons" index="9"]
