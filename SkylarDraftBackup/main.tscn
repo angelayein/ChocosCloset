@@ -12,20 +12,20 @@ anchor_left = 0.543
 anchor_top = -0.284
 anchor_right = 0.66366
 anchor_bottom = -0.0787531
-offset_left = -60.5361
-offset_top = -70.968
-offset_right = -52.5361
-offset_bottom = -48.968
+offset_left = -36.536
+offset_top = -97.968
+offset_right = -28.536
+offset_bottom = -75.968
 
 [node name="Shirts3" parent="Player/PinkBack/Buttons" index="1"]
 anchor_left = 0.297
 anchor_top = 0.453
 anchor_right = 0.297
 anchor_bottom = 0.453
-offset_left = -62.144
-offset_top = -88.544
-offset_right = 69.856
-offset_bottom = 72.456
+offset_left = -69.144
+offset_top = -405.544
+offset_right = 62.856
+offset_bottom = -244.544
 
 [node name="Shirts4" parent="Player/PinkBack/Buttons" index="2"]
 anchors_preset = -1
@@ -49,9 +49,9 @@ offset_right = 2556.99
 offset_bottom = 649.0
 
 [node name="Hats" parent="Player/PinkBack/Buttons" index="7"]
-offset_left = 171.0
-offset_top = 101.0
-offset_right = 283.0
-offset_bottom = 242.0
+offset_left = 123.0
+offset_top = 82.0
+offset_right = 235.0
+offset_bottom = 223.0
 
 [editable path="Player"]
