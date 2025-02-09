@@ -39,8 +39,6 @@
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_85hpp")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="PinkBack" type="Sprite2D" parent="."]
@@ -67,14 +65,14 @@ top_level = true
 light_mask = 3
 visibility_layer = 3
 anchors_preset = -1
-anchor_left = -0.486112
-anchor_top = 0.458334
-anchor_right = -1.12847
+anchor_left = -1.12847
+anchor_top = 0.472222
+anchor_right = -1.7283
 anchor_bottom = -0.354938
-offset_left = 677.001
-offset_top = -223.0
-offset_right = 1545.0
-offset_bottom = 450.0
+offset_left = 1392.0
+offset_top = -219.0
+offset_right = 2260.0
+offset_bottom = 454.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 icon = ExtResource("5_wnvw2")
@@ -89,14 +87,14 @@ top_level = true
 light_mask = 3
 visibility_layer = 3
 anchors_preset = -1
-anchor_left = -0.00173653
-anchor_top = 0.905864
-anchor_right = -0.650174
+anchor_left = -0.650174
+anchor_top = 0.851852
+anchor_right = -1.23003
 anchor_bottom = 0.0524691
-offset_left = 275.0
-offset_top = -488.0
-offset_right = 1143.0
-offset_bottom = 185.0
+offset_left = 989.0
+offset_top = -477.0
+offset_right = 1857.0
+offset_bottom = 196.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 icon = ExtResource("7_seldn")
@@ -143,14 +141,14 @@ top_level = true
 light_mask = 3
 visibility_layer = 3
 anchors_preset = -1
-anchor_left = -0.0164931
-anchor_top = 0.0648148
-anchor_right = -0.697049
+anchor_left = -0.697049
+anchor_top = 0.0709877
+anchor_right = -1.37326
 anchor_bottom = -0.774691
-offset_left = 274.0
-offset_top = -123.0
-offset_right = 1205.0
-offset_bottom = 532.0
+offset_left = 1068.0
+offset_top = -120.0
+offset_right = 1999.0
+offset_bottom = 535.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 icon = ExtResource("11_5a6o2")
@@ -235,6 +233,8 @@ visibility_layer = 3
 anchors_preset = -1
 anchor_left = 0.0503472
 anchor_top = 0.0385802
+anchor_right = 0.0503472
+anchor_bottom = 0.0385802
 offset_left = -116.0
 offset_top = 325.0
 offset_right = 54.0
@@ -276,56 +276,56 @@ script = ExtResource("8_tr6gt")
 
 [node name="Skirt1" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-297, -49)
+position = Vector2(-294, 68)
 scale = Vector2(0.51272, 0.426947)
 texture = ExtResource("11_5a6o2")
 script = ExtResource("5_areno")
 
 [node name="Skirt2" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-296, -50)
+position = Vector2(-293, 66)
 scale = Vector2(0.517708, 0.411827)
 texture = ExtResource("13_byu5l")
 script = ExtResource("5_areno")
 
 [node name="Skirt3" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(53, -12)
+position = Vector2(-296, 77)
 scale = Vector2(0.517708, 0.411827)
 texture = ExtResource("15_d2q5a")
 script = ExtResource("5_areno")
 
 [node name="Shirt1" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-295, -66)
+position = Vector2(-295, -40)
 scale = Vector2(0.45388, 0.466283)
 texture = ExtResource("20_867mj")
 script = ExtResource("5_areno")
 
 [node name="Shirt2" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-297, -65)
+position = Vector2(-297, -31)
 scale = Vector2(0.528436, 0.504133)
 texture = ExtResource("5_wnvw2")
 script = ExtResource("5_areno")
 
 [node name="Shirt3" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(59, -15)
+position = Vector2(-296, -32)
 scale = Vector2(0.528436, 0.504133)
 texture = ExtResource("7_seldn")
 script = ExtResource("5_areno")
 
 [node name="Shirt4" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(2, -35)
+position = Vector2(-296, -30)
 scale = Vector2(0.442434, 0.409881)
 texture = ExtResource("8_4uwqx")
 script = ExtResource("5_areno")
 
 [node name="Hat1" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(25.5, -33.5)
+position = Vector2(-292, -278)
 scale = Vector2(0.474012, 0.468897)
 texture = ExtResource("16_yki3n")
 script = ExtResource("10_sieij")
@@ -339,6 +339,9 @@ texture = ExtResource("16_xewvg")
 [node name="Click2" type="AudioStreamPlayer" parent="PinkBack"]
 stream = ExtResource("29_h6tk7")
 parameters/looping = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.7, 0.7)
 
 [connection signal="button_down" from="PinkBack/Buttons/Shirts2" to="PinkBack/Buttons/Shirts2" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Shirts3" to="PinkBack/Buttons/Shirts3" method="_on_button_down"]

@@ -1,6 +1,7 @@
 extends Button
 
 @onready var ad : Node
+
 func run(ad):
 	print(ad)
 	if ad.visible == true:
