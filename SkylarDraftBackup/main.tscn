@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://414epyk0vcbs"]
+[gd_scene load_steps=8 format=3 uid="uid://414epyk0vcbs"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
 [ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_lnbkb"]
+[ext_resource type="Texture2D" uid="uid://d0w0obo1jac4o" path="res://Hats2/hat_2.png" id="2_s4v5d"]
+[ext_resource type="Texture2D" uid="uid://dtkdo1m50nqmy" path="res://Skirts4/skirt_4.png" id="4_xs3l0"]
+[ext_resource type="Texture2D" uid="uid://di37jd4iviiio" path="res://Shirt5/shirt_5.png" id="5_ptx27"]
+[ext_resource type="Texture2D" uid="uid://um4wngs3o8y0" path="res://Shirt6/shirt_6.png" id="6_ibplk"]
+[ext_resource type="Texture2D" uid="uid://b88f3eprfey3g" path="res://Hats3/hat_3.png" id="7_euc4v"]
 
 [node name="Control" type="Node2D"]
 metadata/_edit_lock_ = true
@@ -79,13 +84,14 @@ offset_right = 254.0
 offset_bottom = 208.0
 
 [node name="Hats2" parent="Player/PinkBack/Buttons" index="8"]
-anchor_left = -0.0572917
-anchor_right = -0.107639
-anchor_bottom = 0.0709877
-offset_left = 206.0
-offset_top = -274.0
-offset_right = 376.0
-offset_bottom = -182.0
+anchor_left = -0.0607639
+anchor_right = 0.396701
+anchor_bottom = 0.5
+offset_left = 57.0
+offset_top = -321.0
+offset_right = 227.0
+offset_bottom = -229.0
+icon = ExtResource("2_s4v5d")
 
 [node name="ButtonComponent" parent="Player/PinkBack/Buttons" index="9"]
 offset_left = 786.0
@@ -105,10 +111,63 @@ anchor_left = 0.626067
 anchor_top = 7.24588
 anchor_right = 1.62607
 anchor_bottom = 8.24588
-offset_left = -1532.23
-offset_top = -4449.33
-offset_right = -2381.23
-offset_bottom = -4998.33
+offset_left = -1472.23
+offset_top = -4424.33
+offset_right = -2321.23
+offset_bottom = -4973.33
 metadata/_edit_use_anchors_ = true
+
+[node name="Skirt1" parent="Player/PinkBack/Clothes" index="0"]
+position = Vector2(-288, 61)
+
+[node name="Skirt2" parent="Player/PinkBack/Clothes" index="1"]
+position = Vector2(-288, 61)
+
+[node name="Skirt3" parent="Player/PinkBack/Clothes" index="2"]
+position = Vector2(-290, 66)
+
+[node name="Skirt4" type="Sprite2D" parent="Player/PinkBack/Clothes" index="3"]
+visible = false
+position = Vector2(88, -19)
+scale = Vector2(0.559625, 0.44758)
+texture = ExtResource("4_xs3l0")
+
+[node name="Shirt1" parent="Player/PinkBack/Clothes" index="4"]
+position = Vector2(-289, -40)
+
+[node name="Shirt2" parent="Player/PinkBack/Clothes" index="5"]
+position = Vector2(-292, -29)
+
+[node name="Shirt3" parent="Player/PinkBack/Clothes" index="6"]
+position = Vector2(-289, -34)
+
+[node name="Shirt4" parent="Player/PinkBack/Clothes" index="7"]
+position = Vector2(-288, -30)
+
+[node name="Shirt5" type="Sprite2D" parent="Player/PinkBack/Clothes" index="8"]
+visible = false
+position = Vector2(35, -25)
+scale = Vector2(0.480783, 0.461056)
+texture = ExtResource("5_ptx27")
+
+[node name="Shirt6" type="Sprite2D" parent="Player/PinkBack/Clothes" index="9"]
+visible = false
+position = Vector2(35, -25)
+scale = Vector2(0.480783, 0.461056)
+texture = ExtResource("6_ibplk")
+
+[node name="Hat1" parent="Player/PinkBack/Clothes" index="10"]
+position = Vector2(-288, -238)
+
+[node name="Hat2" parent="Player/PinkBack/Clothes" index="11"]
+position = Vector2(42.5, -57.444)
+scale = Vector2(0.490849, 0.381135)
+texture = ExtResource("2_s4v5d")
+
+[node name="Hat3" type="Sprite2D" parent="Player/PinkBack/Clothes" index="12"]
+visible = false
+position = Vector2(42.5, -57.444)
+scale = Vector2(0.490849, 0.381135)
+texture = ExtResource("7_euc4v")
 
 [editable path="Player"]
