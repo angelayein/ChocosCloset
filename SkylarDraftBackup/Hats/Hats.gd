@@ -1,39 +1,20 @@
-extends Button
+extends "res://button_component.gd"
 
-
-var visibility: bool = false
+@onready var address : Node = $"../../Clothes/HatGrey"
+@onready var buttonAddress : Node = $"."
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-	
-# Replace with function body.
-	
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-
+	
 func _on_button_down() -> void:
-	var index = $"../../Clothes/HatGrey"
-	var i : int = 0
-	print(i)
+	run(address)
+
+func run(address):
+	super(address)
 	
-	if(index.visible == false):
-		index.visible = true
-	else: 
-		index.visible = false
-		
-	
-		
-	#if visibility == true:
-		#visibility = false
-		#print("hidden")
-		#array[i].visible = false;
-	#else:
-		#visibility = true
-		#print("visible")
-		#$"../HatGrey".visible = true;

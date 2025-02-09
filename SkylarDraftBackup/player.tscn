@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=23 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
@@ -16,7 +16,9 @@
 [ext_resource type="Script" path="res://Hats/hat_grey.gd" id="10_sieij"]
 [ext_resource type="Script" path="res://Hats/Hats.gd" id="11_q0i4c"]
 [ext_resource type="Texture2D" uid="uid://cobsvq7efi5ce" path="res://Shirt2/cute shirt.png" id="15_8mpad"]
+[ext_resource type="Script" path="res://button_component.gd" id="16_bedxy"]
 [ext_resource type="Texture2D" uid="uid://by2ic2srjec5h" path="res://Hats2/baseball-hat-red.png" id="16_xewvg"]
+[ext_resource type="Script" path="res://endgame_button.gd" id="17_805fl"]
 [ext_resource type="Texture2D" uid="uid://c0hrwux28i2jy" path="res://Pants2/pinkpants.png" id="18_cg8du"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
@@ -140,6 +142,29 @@ icon_alignment = 1
 expand_icon = true
 script = ExtResource("8_hip4f")
 
+[node name="ButtonComponent" type="Button" parent="PinkBack/Buttons"]
+offset_left = 621.0
+offset_top = -46.0
+offset_right = 629.0
+offset_bottom = -38.0
+script = ExtResource("16_bedxy")
+
+[node name="EndgameButton" type="Button" parent="PinkBack/Buttons"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -392.0
+offset_top = -102.0
+offset_right = -267.0
+offset_bottom = 41.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("15_8mpad")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("17_805fl")
+
 [node name="Clothes" type="Node" parent="PinkBack"]
 script = ExtResource("8_tr6gt")
 
@@ -188,3 +213,4 @@ texture = ExtResource("18_cg8du")
 [connection signal="button_down" from="PinkBack/Buttons/Pants2" to="PinkBack/Buttons/Pants2" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats" to="PinkBack/Buttons/Hats" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats2" to="PinkBack/Buttons/Hats2" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/EndgameButton" to="PinkBack/Buttons/EndgameButton" method="_on_button_down"]
