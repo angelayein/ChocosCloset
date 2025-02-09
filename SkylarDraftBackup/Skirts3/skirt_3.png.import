@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deixcavna617s"
-path="res://.godot/imported/Pinkbackground.jpeg-d947f84437614adbf77963df8f7b80cb.ctex"
+uid="uid://dyfyqiampk51s"
+path="res://.godot/imported/skirt_3.png-63e199472125df398d5eef92e0b351ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pinkbackground.jpeg"
-dest_files=["res://.godot/imported/Pinkbackground.jpeg-d947f84437614adbf77963df8f7b80cb.ctex"]
+source_file="res://Skirts3/skirt_3.png"
+dest_files=["res://.godot/imported/skirt_3.png-63e199472125df398d5eef92e0b351ec.ctex"]
 
 [params]
 

@@ -7,7 +7,7 @@ func _ready() -> void:
 	$Button.position = Vector2(100, 100)
 	$Button.pressed.connect(_on_button_pressed)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 

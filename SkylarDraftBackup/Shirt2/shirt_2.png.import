@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcwht7ppxv2at"
-path="res://.godot/imported/PantsGrey.png-1e53c3ece0f600aed5ff4672305166d7.ctex"
+uid="uid://b0vqe1i0vy3gy"
+path="res://.godot/imported/shirt_2.png-988474b5969089380ff0aeb475eff77d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pants/PantsGrey.png"
-dest_files=["res://.godot/imported/PantsGrey.png-1e53c3ece0f600aed5ff4672305166d7.ctex"]
+source_file="res://Shirt2/shirt_2.png"
+dest_files=["res://.godot/imported/shirt_2.png-988474b5969089380ff0aeb475eff77d.ctex"]
 
 [params]
 

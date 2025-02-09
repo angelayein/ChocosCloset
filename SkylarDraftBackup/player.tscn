@@ -1,25 +1,33 @@
-[gd_scene load_steps=23 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=31 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_85hpp"]
-[ext_resource type="Texture2D" uid="uid://bjwrd70hd82le" path="res://PinkBack.png" id="2_8nccm"]
+[ext_resource type="Texture2D" uid="uid://dxw6i7oua2yj3" path="res://background.png" id="2_2pspe"]
 [ext_resource type="Script" path="res://Shirt1/shirts.gd" id="3_bjcgq"]
-[ext_resource type="Texture2D" uid="uid://do70iekuw1aq0" path="res://Stick.png" id="3_jnssk"]
-[ext_resource type="Texture2D" uid="uid://8b05eekp40x2" path="res://Shirt1/WhiteShirt.png" id="4_7mxqf"]
-[ext_resource type="Texture2D" uid="uid://bcwht7ppxv2at" path="res://Pants/PantsGrey.png" id="4_ierly"]
+[ext_resource type="Texture2D" uid="uid://cwgan108c8hy1" path="res://model.png" id="3_udlk5"]
+[ext_resource type="Texture2D" uid="uid://djp1v7yqp54xx" path="res://bar.png" id="4_3uv5w"]
 [ext_resource type="Script" path="res://Shirt2/shirts_2.gd" id="4_jiffb"]
 [ext_resource type="Script" path="res://white_shirt.gd" id="5_areno"]
-[ext_resource type="Script" path="res://Pants2/pants_2.gd" id="7_uqt03"]
+[ext_resource type="Texture2D" uid="uid://b0vqe1i0vy3gy" path="res://Shirt2/shirt_2.png" id="5_wnvw2"]
+[ext_resource type="Texture2D" uid="uid://jwocwoeaggeb" path="res://Shirt3/shirt_3.png" id="7_seldn"]
+[ext_resource type="Texture2D" uid="uid://1ueqxkempnci" path="res://Shirt4/shirt_4.png" id="8_4uwqx"]
+[ext_resource type="Script" path="res://Shirt3/shirts_3.gd" id="8_26ibd"]
 [ext_resource type="Script" path="res://Hats2/hats_2.gd" id="8_hip4f"]
 [ext_resource type="Script" path="res://Clothing.gd" id="8_tr6gt"]
-[ext_resource type="Script" path="res://Pants/pants.gd" id="8_uhoeq"]
-[ext_resource type="Texture2D" uid="uid://08t7csopix5v" path="res://Hats/HatGrey.png" id="9_vhypk"]
+[ext_resource type="Script" path="res://Shirt4/shirts_4.gd" id="10_g30c5"]
 [ext_resource type="Script" path="res://Hats/hat_grey.gd" id="10_sieij"]
+[ext_resource type="Texture2D" uid="uid://c460jbhoc05o6" path="res://Skirts/skirt_1.png" id="11_5a6o2"]
 [ext_resource type="Script" path="res://Hats/Hats.gd" id="11_q0i4c"]
-[ext_resource type="Texture2D" uid="uid://cobsvq7efi5ce" path="res://Shirt2/cute shirt.png" id="15_8mpad"]
+[ext_resource type="Texture2D" uid="uid://ci1tdw76e5dy0" path="res://Skirts2/skirt_2.png" id="13_byu5l"]
+[ext_resource type="Script" path="res://Skirts/skirts.gd" id="14_bgoui"]
+[ext_resource type="Texture2D" path="res://Shirt2/cute shirt.png" id="15_8mpad"]
+[ext_resource type="Texture2D" uid="uid://dyfyqiampk51s" path="res://Skirts3/skirt_3.png" id="15_d2q5a"]
 [ext_resource type="Script" path="res://button_component.gd" id="16_bedxy"]
+[ext_resource type="Script" path="res://Skirts2/skirt_2.gd" id="16_v4xqq"]
 [ext_resource type="Texture2D" uid="uid://by2ic2srjec5h" path="res://Hats2/baseball-hat-red.png" id="16_xewvg"]
+[ext_resource type="Texture2D" uid="uid://dkbi6erisqtl1" path="res://Hats/hat_1.png" id="16_yki3n"]
 [ext_resource type="Script" path="res://endgame_button.gd" id="17_805fl"]
-[ext_resource type="Texture2D" uid="uid://c0hrwux28i2jy" path="res://Pants2/pinkpants.png" id="18_cg8du"]
+[ext_resource type="Script" path="res://Skirts3/skirt_3.gd" id="18_qdgps"]
+[ext_resource type="Texture2D" uid="uid://b7uw6s3ifo3qp" path="res://Shirt1/shirt_1.png" id="20_867mj"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
 
@@ -33,16 +41,21 @@ script = ExtResource("1_85hpp")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="PinkBack" type="Sprite2D" parent="."]
-position = Vector2(1, 34)
-scale = Vector2(0.919695, 0.919695)
-texture = ExtResource("2_8nccm")
+position = Vector2(-6.99998, 11)
+scale = Vector2(0.598829, 0.503921)
+texture = ExtResource("2_2pspe")
 
 [node name="Stick" type="Sprite2D" parent="PinkBack"]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(-63.0644, 4.34927)
-scale = Vector2(1.15346, 1.15346)
-texture = ExtResource("3_jnssk")
+position = Vector2(-482.609, -148.833)
+scale = Vector2(0.848105, 0.960019)
+texture = ExtResource("3_udlk5")
+
+[node name="Bar" type="Sprite2D" parent="PinkBack"]
+position = Vector2(127.749, 57.5488)
+scale = Vector2(1.09352, 1.08921)
+texture = ExtResource("4_3uv5w")
 
 [node name="Buttons" type="Node" parent="PinkBack"]
 
@@ -50,77 +63,125 @@ texture = ExtResource("3_jnssk")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 128.0
-offset_top = -174.0
-offset_right = 253.0
-offset_bottom = -31.0
+offset_left = -2.0
+offset_top = -420.0
+offset_right = 866.0
+offset_bottom = 253.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("15_8mpad")
+icon = ExtResource("5_wnvw2")
 flat = true
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("4_jiffb")
 
+[node name="Shirts3" type="Button" parent="PinkBack/Buttons"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -2.0
+offset_top = -420.0
+offset_right = 866.0
+offset_bottom = 253.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("7_seldn")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("8_26ibd")
+
+[node name="Shirts4" type="Button" parent="PinkBack/Buttons"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -12.0
+offset_top = -32.0
+offset_right = 856.0
+offset_bottom = 641.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("8_4uwqx")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("10_g30c5")
+
 [node name="Shirts" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 360.0
-offset_top = -174.0
-offset_right = 502.0
-offset_bottom = -39.0
+offset_left = 17.0
+offset_top = 3.0
+offset_right = 862.0
+offset_bottom = 589.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("4_7mxqf")
+icon = ExtResource("20_867mj")
 flat = true
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("3_bjcgq")
 
-[node name="Pants" type="Button" parent="PinkBack/Buttons"]
+[node name="Skirts" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 331.0
-offset_top = -2.0
-offset_right = 535.0
-offset_bottom = 211.0
+offset_left = -31.0
+offset_top = -301.0
+offset_right = 900.0
+offset_bottom = 354.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("4_ierly")
+icon = ExtResource("11_5a6o2")
 flat = true
 icon_alignment = 1
 expand_icon = true
-script = ExtResource("8_uhoeq")
+script = ExtResource("14_bgoui")
 
-[node name="Pants2" type="Button" parent="PinkBack/Buttons"]
+[node name="Skirts2" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 105.0
-offset_top = -9.0
-offset_right = 281.0
-offset_bottom = 222.0
+offset_left = 198.0
+offset_top = -343.0
+offset_right = 1126.0
+offset_bottom = 386.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("18_cg8du")
+icon = ExtResource("13_byu5l")
 flat = true
 icon_alignment = 1
 expand_icon = true
-script = ExtResource("7_uqt03")
+script = ExtResource("16_v4xqq")
+
+[node name="Skirts3" type="Button" parent="PinkBack/Buttons"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -55.0
+offset_top = -389.0
+offset_right = 945.0
+offset_bottom = 459.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("15_d2q5a")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("18_qdgps")
 
 [node name="Hats" type="Button" parent="PinkBack/Buttons"]
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 338.0
-offset_top = -295.0
-offset_right = 552.0
-offset_bottom = -201.0
+offset_left = -56.0
+offset_top = -451.0
+offset_right = 1753.0
+offset_bottom = 444.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("9_vhypk")
+icon = ExtResource("16_yki3n")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -153,10 +214,10 @@ script = ExtResource("16_bedxy")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = -392.0
-offset_top = -102.0
-offset_right = -267.0
-offset_bottom = 41.0
+offset_left = -718.0
+offset_top = 275.0
+offset_right = -593.0
+offset_bottom = 418.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 icon = ExtResource("15_8mpad")
@@ -168,49 +229,69 @@ script = ExtResource("17_805fl")
 [node name="Clothes" type="Node" parent="PinkBack"]
 script = ExtResource("8_tr6gt")
 
-[node name="GreyPants" type="Sprite2D" parent="PinkBack/Clothes"]
+[node name="Skirt1" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-25, 189)
-scale = Vector2(0.244693, 0.267778)
-texture = ExtResource("4_ierly")
+position = Vector2(-297, -49)
+scale = Vector2(0.51272, 0.426947)
+texture = ExtResource("11_5a6o2")
 script = ExtResource("5_areno")
 
-[node name="WhiteShirt" type="Sprite2D" parent="PinkBack/Clothes"]
+[node name="Skirt2" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-15, -8.99997)
-scale = Vector2(0.417897, 0.429704)
-texture = ExtResource("4_7mxqf")
+position = Vector2(-296, -50)
+scale = Vector2(0.517708, 0.411827)
+texture = ExtResource("13_byu5l")
 script = ExtResource("5_areno")
 
-[node name="HatGrey" type="Sprite2D" parent="PinkBack/Clothes"]
+[node name="Skirt3" type="Sprite2D" parent="PinkBack/Clothes"]
 visible = false
-position = Vector2(-21, -255)
-scale = Vector2(0.0505426, 0.0505426)
-texture = ExtResource("9_vhypk")
+position = Vector2(53, -12)
+scale = Vector2(0.517708, 0.411827)
+texture = ExtResource("15_d2q5a")
+script = ExtResource("5_areno")
+
+[node name="Shirt1" type="Sprite2D" parent="PinkBack/Clothes"]
+visible = false
+position = Vector2(-295, -66)
+scale = Vector2(0.45388, 0.466283)
+texture = ExtResource("20_867mj")
+script = ExtResource("5_areno")
+
+[node name="Shirt2" type="Sprite2D" parent="PinkBack/Clothes"]
+visible = false
+position = Vector2(-297, -65)
+scale = Vector2(0.528436, 0.504133)
+texture = ExtResource("5_wnvw2")
+script = ExtResource("5_areno")
+
+[node name="Shirt3" type="Sprite2D" parent="PinkBack/Clothes"]
+visible = false
+position = Vector2(59, -15)
+scale = Vector2(0.528436, 0.504133)
+texture = ExtResource("7_seldn")
+script = ExtResource("5_areno")
+
+[node name="Shirt4" type="Sprite2D" parent="PinkBack/Clothes"]
+visible = false
+position = Vector2(2, -35)
+scale = Vector2(0.442434, 0.409881)
+texture = ExtResource("8_4uwqx")
+script = ExtResource("5_areno")
+
+[node name="Hat1" type="Sprite2D" parent="PinkBack/Clothes"]
+visible = false
+position = Vector2(25.5, -33.5)
+scale = Vector2(0.474012, 0.468897)
+texture = ExtResource("16_yki3n")
 script = ExtResource("10_sieij")
 
-[node name="CuteShirt" type="Sprite2D" parent="PinkBack/Clothes"]
-visible = false
-position = Vector2(-13, -18)
-scale = Vector2(0.122362, 0.130828)
-texture = ExtResource("15_8mpad")
-
-[node name="Baseball-hat-red" type="Sprite2D" parent="PinkBack/Clothes"]
-visible = false
-position = Vector2(-36, -234)
-scale = Vector2(0.492908, 0.482063)
-texture = ExtResource("16_xewvg")
-
-[node name="Pinkpants" type="Sprite2D" parent="PinkBack/Clothes"]
-visible = false
-position = Vector2(-15, 209)
-scale = Vector2(0.517708, 0.411827)
-texture = ExtResource("18_cg8du")
-
 [connection signal="button_down" from="PinkBack/Buttons/Shirts2" to="PinkBack/Buttons/Shirts2" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Shirts3" to="PinkBack/Buttons/Shirts3" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Shirts4" to="PinkBack/Buttons/Shirts4" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Shirts" to="PinkBack/Buttons/Shirts" method="_on_button_down"]
-[connection signal="button_down" from="PinkBack/Buttons/Pants" to="PinkBack/Buttons/Pants" method="_on_button_down"]
-[connection signal="button_down" from="PinkBack/Buttons/Pants2" to="PinkBack/Buttons/Pants2" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Skirts" to="PinkBack/Buttons/Skirts" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Skirts2" to="PinkBack/Buttons/Skirts2" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/Skirts3" to="PinkBack/Buttons/Skirts3" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats" to="PinkBack/Buttons/Hats" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats2" to="PinkBack/Buttons/Hats2" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/EndgameButton" to="PinkBack/Buttons/EndgameButton" method="_on_button_down"]
