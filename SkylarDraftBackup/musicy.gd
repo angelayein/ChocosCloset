@@ -1,11 +1,11 @@
-extends Control
+extends "res://button_component.gd"
 
 var music_playing := false
 
 func _ready() -> void:
-	$Button.visible = true
-	$Button.position = Vector2(100, 100)
-	$Button.pressed.connect(_on_button_pressed)
+	$".".visible = true
+	$".".position = Vector2(100, 100)
+	$".".pressed.connect(_on_button_pressed)
 
 func _process(_delta: float) -> void:
 	pass
@@ -13,8 +13,8 @@ func _process(_delta: float) -> void:
 
 func _on_button_pressed() -> void:
 	if music_playing:
-		$Click.stop()
+		$"../../Click2".stop()
 	else:
-		$Click.play()
+		$"../../Click2".play()
 	
 	music_playing = !music_playing

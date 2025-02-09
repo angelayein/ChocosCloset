@@ -1,6 +1,6 @@
 extends "res://button_component.gd"
 
-@onready var address : Node = $"PinkBack/Clothes/Hat1"
+@onready var address : Node = $"."
 @onready var buttonAddress : Node = $"."
 
 

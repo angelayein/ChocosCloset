@@ -1,23 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://ly5ufhn8sjh6"]
+[gd_scene load_steps=3 format=3 uid="uid://1iw0s6oyrdsv"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
-[ext_resource type="Script" path="res://control.gd" id="2_mak3u"]
-[ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_mip30"]
-[ext_resource type="PackedScene" uid="uid://duasb3i68r6c1" path="res://menu.tscn" id="3_ae8d7"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="GDScript" id="GDScript_kbe7w"]
+script/source = "extends Node2D
+
+var music_playing := false
+
+func _ready() -> void:
+	$Button.visible = true
+	$Button.position = Vector2(100, 100)
+	$Button.pressed.connect(_on_button_pressed)
+
+func _process(_delta: float) -> void:
+	pass
+
+
+func _on_button_pressed() -> void:
+	if music_playing:
+		$Click.stop()
+	else:
+		$Click.play()
+	
+	music_playing = !music_playing
+"
+
+[node name="Control" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_rpsyx")]
-script = ExtResource("2_mak3u")
-
-[node name="Music" parent="." instance=ExtResource("2_mip30")]
-offset_left = -238.0
-offset_top = -126.0
-offset_right = -238.0
-offset_bottom = -126.0
-
-[node name="Menu" parent="." instance=ExtResource("3_ae8d7")]
-offset_left = -319.0
-offset_top = -32.0
-offset_right = -319.0
-offset_bottom = -32.0
+script = SubResource("GDScript_kbe7w")

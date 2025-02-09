@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dgqkyxtk2ohfs"]
+[gd_scene load_steps=32 format=3 uid="uid://dgqkyxtk2ohfs"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_85hpp"]
 [ext_resource type="Texture2D" uid="uid://dxw6i7oua2yj3" path="res://background.png" id="2_2pspe"]
@@ -19,7 +19,6 @@
 [ext_resource type="Script" path="res://Hats/Hats.gd" id="11_q0i4c"]
 [ext_resource type="Texture2D" uid="uid://ci1tdw76e5dy0" path="res://Skirts2/skirt_2.png" id="13_byu5l"]
 [ext_resource type="Script" path="res://Skirts/skirts.gd" id="14_bgoui"]
-[ext_resource type="Texture2D" path="res://Shirt2/cute shirt.png" id="15_8mpad"]
 [ext_resource type="Texture2D" uid="uid://dyfyqiampk51s" path="res://Skirts3/skirt_3.png" id="15_d2q5a"]
 [ext_resource type="Script" path="res://button_component.gd" id="16_bedxy"]
 [ext_resource type="Script" path="res://Skirts2/skirt_2.gd" id="16_v4xqq"]
@@ -28,6 +27,8 @@
 [ext_resource type="Script" path="res://endgame_button.gd" id="17_805fl"]
 [ext_resource type="Script" path="res://Skirts3/skirt_3.gd" id="18_qdgps"]
 [ext_resource type="Texture2D" uid="uid://b7uw6s3ifo3qp" path="res://Shirt1/shirt_1.png" id="20_867mj"]
+[ext_resource type="Script" path="res://musicy.gd" id="23_eoj5k"]
+[ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="29_h6tk7"]
 
 [sub_resource type="Theme" id="Theme_w0ynq"]
 
@@ -191,10 +192,10 @@ script = ExtResource("11_q0i4c")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-offset_left = 124.0
-offset_top = -301.0
-offset_right = 294.0
-offset_bottom = -209.0
+offset_left = 133.0
+offset_top = -276.0
+offset_right = 303.0
+offset_bottom = -184.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
 icon = ExtResource("16_xewvg")
@@ -202,6 +203,23 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("8_hip4f")
+
+[node name="MUSIC" type="Button" parent="PinkBack/Buttons"]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -193.0
+offset_top = 269.0
+offset_right = -23.0
+offset_bottom = 361.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+text = "MUSIC"
+icon = ExtResource("16_xewvg")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("23_eoj5k")
 
 [node name="ButtonComponent" type="Button" parent="PinkBack/Buttons"]
 offset_left = 621.0
@@ -220,7 +238,6 @@ offset_right = -593.0
 offset_bottom = 418.0
 theme = SubResource("Theme_w0ynq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
-icon = ExtResource("15_8mpad")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -285,6 +302,10 @@ scale = Vector2(0.474012, 0.468897)
 texture = ExtResource("16_yki3n")
 script = ExtResource("10_sieij")
 
+[node name="Click2" type="AudioStreamPlayer" parent="PinkBack"]
+stream = ExtResource("29_h6tk7")
+parameters/looping = false
+
 [connection signal="button_down" from="PinkBack/Buttons/Shirts2" to="PinkBack/Buttons/Shirts2" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Shirts3" to="PinkBack/Buttons/Shirts3" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Shirts4" to="PinkBack/Buttons/Shirts4" method="_on_button_down"]
@@ -294,4 +315,5 @@ script = ExtResource("10_sieij")
 [connection signal="button_down" from="PinkBack/Buttons/Skirts3" to="PinkBack/Buttons/Skirts3" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats" to="PinkBack/Buttons/Hats" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/Hats2" to="PinkBack/Buttons/Hats2" method="_on_button_down"]
+[connection signal="button_down" from="PinkBack/Buttons/MUSIC" to="PinkBack/Buttons/MUSIC" method="_on_button_down"]
 [connection signal="button_down" from="PinkBack/Buttons/EndgameButton" to="PinkBack/Buttons/EndgameButton" method="_on_button_down"]
