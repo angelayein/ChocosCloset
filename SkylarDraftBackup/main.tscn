@@ -1,31 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://414epyk0vcbs"]
+[gd_scene load_steps=3 format=3 uid="uid://414epyk0vcbs"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
+[ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_lnbkb"]
 
 [node name="Control" type="Node2D"]
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("1_rpsyx")]
+position = Vector2(2, 2)
+
+[node name="PinkBack" parent="Player" index="1"]
+position = Vector2(0.999928, 3.00001)
+scale = Vector2(0.604685, 0.483011)
 
 [node name="Shirts2" parent="Player/PinkBack/Buttons" index="0"]
 anchor_left = 0.556021
 anchor_top = -0.273198
 anchor_right = 0.653243
 anchor_bottom = -0.0787531
-offset_left = -35.536
-offset_top = -104.968
-offset_right = -27.536
-offset_bottom = -82.968
+offset_left = -12.5361
+offset_top = -102.968
+offset_right = -4.53613
+offset_bottom = -80.9677
 
 [node name="Shirts3" parent="Player/PinkBack/Buttons" index="1"]
 anchor_left = 0.297
 anchor_top = 0.453
 anchor_right = 0.297
 anchor_bottom = 0.453
-offset_left = -69.144
-offset_top = -405.544
-offset_right = 62.856
-offset_bottom = -244.544
+offset_left = -51.144
+offset_top = -407.544
+offset_right = 80.856
+offset_bottom = -246.544
 
 [node name="Shirts4" parent="Player/PinkBack/Buttons" index="2"]
 anchors_preset = -1
@@ -33,37 +39,76 @@ anchor_left = 0.578
 anchor_top = 0.246
 anchor_right = 0.578
 anchor_bottom = 0.246
-offset_left = -57.856
-offset_top = -255.408
-offset_right = 59.144
-offset_bottom = -110.408
+offset_left = -39.856
+offset_top = -262.408
+offset_right = 77.144
+offset_bottom = -117.408
 
 [node name="Shirts" parent="Player/PinkBack/Buttons" index="3"]
-offset_left = 448.0
-offset_top = -99.0
-offset_right = 570.0
-offset_bottom = 53.0
+offset_left = 462.0
+offset_top = -111.0
+offset_right = 584.0
+offset_bottom = 41.0
 
 [node name="Skirts" parent="Player/PinkBack/Buttons" index="4"]
-anchor_left = -1.87239
+anchor_left = -1.89062
 anchor_top = -1.09259
-anchor_right = -1.88194
+anchor_right = -1.89062
 anchor_bottom = -1.04938
-offset_left = 2439.99
-offset_top = 429.999
-offset_right = 2568.99
-offset_bottom = 552.999
+offset_left = 2463.99
+offset_top = 425.998
+offset_right = 2592.99
+offset_bottom = 548.998
 
 [node name="Skirts2" parent="Player/PinkBack/Buttons" index="5"]
-offset_left = 447.0
-offset_top = -277.0
-offset_right = 569.0
-offset_bottom = -131.0
+offset_left = 461.0
+offset_top = -274.0
+offset_right = 583.0
+offset_bottom = -128.0
+
+[node name="Skirts3" parent="Player/PinkBack/Buttons" index="6"]
+offset_left = 132.0
+offset_top = -106.0
+offset_right = 255.0
+offset_bottom = 44.0
 
 [node name="Hats" parent="Player/PinkBack/Buttons" index="7"]
-offset_left = 129.0
-offset_top = 86.0
-offset_right = 241.0
-offset_bottom = 227.0
+offset_left = 142.0
+offset_top = 67.0
+offset_right = 254.0
+offset_bottom = 208.0
+
+[node name="Hats2" parent="Player/PinkBack/Buttons" index="8"]
+anchor_left = -0.0572917
+anchor_right = -0.107639
+anchor_bottom = 0.0709877
+offset_left = 206.0
+offset_top = -274.0
+offset_right = 376.0
+offset_bottom = -182.0
+
+[node name="ButtonComponent" parent="Player/PinkBack/Buttons" index="9"]
+offset_left = 786.0
+offset_top = -22.0
+offset_right = 794.0
+offset_bottom = -14.0
+
+[node name="EndgameButton" parent="Player/PinkBack/Buttons" index="10"]
+offset_left = -716.0
+offset_top = 277.0
+offset_right = -591.0
+offset_bottom = 420.0
+
+[node name="Music" parent="Player/PinkBack/Buttons" index="11" instance=ExtResource("2_lnbkb")]
+anchors_preset = -1
+anchor_left = 0.626067
+anchor_top = 7.24588
+anchor_right = 1.62607
+anchor_bottom = 8.24588
+offset_left = -1532.23
+offset_top = -4449.33
+offset_right = -2381.23
+offset_bottom = -4998.33
+metadata/_edit_use_anchors_ = true
 
 [editable path="Player"]
