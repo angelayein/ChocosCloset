@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://1iw0s6oyrdsv"]
+[gd_scene load_steps=3 format=3 uid="uid://414epyk0vcbs"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
 
@@ -26,6 +26,7 @@ func _on_button_pressed() -> void:
 "
 
 [node name="Control" type="Node2D"]
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("1_rpsyx")]
 script = SubResource("GDScript_kbe7w")

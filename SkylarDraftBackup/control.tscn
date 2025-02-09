@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://gnxke32ibh8b"]
+[gd_scene load_steps=2 format=3 uid="uid://gnxke32ibh8b"]
 
-[ext_resource type="Script" path="res://control.gd" id="1_6nc5c"]
 [ext_resource type="AudioStream" uid="uid://dbjmcjqjqd2ws" path="res://summer-background-music-295031.mp3" id="2_2hsdt"]
 
 [node name="Music" type="Control"]
@@ -10,7 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6nc5c")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1

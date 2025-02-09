@@ -1,13 +1,15 @@
 extends Button
 
-func run(address):
-	if address.visible == true:
-		address.visible = false
+@onready var ad : Node
+func run(ad):
+	print(ad)
+	if ad.visible == true:
+		ad.visible = false
 		print("hidden")
-		address.visible = false;
+		ad.visible = false;
 		
 	else:
-		address.visible = true
+		ad.visible = true
 		print("visible")
 		
 
