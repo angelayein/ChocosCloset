@@ -1,0 +1,268 @@
+[gd_scene load_steps=25 format=3 uid="uid://dpr68252s6keq"]
+
+[ext_resource type="Texture2D" uid="uid://b0vqe1i0vy3gy" path="res://Shirt2/shirt_2.png" id="1_uek0w"]
+[ext_resource type="Script" path="res://Shirt2/shirts_2.gd" id="2_1qksj"]
+[ext_resource type="Texture2D" uid="uid://jwocwoeaggeb" path="res://Shirt3/shirt_3.png" id="3_ry25f"]
+[ext_resource type="Script" path="res://Shirt3/shirts_3.gd" id="4_envuj"]
+[ext_resource type="Texture2D" uid="uid://1ueqxkempnci" path="res://Shirt4/shirt_4.png" id="5_4xn8e"]
+[ext_resource type="Script" path="res://Shirt4/shirts_4.gd" id="6_dbuow"]
+[ext_resource type="Texture2D" uid="uid://b7uw6s3ifo3qp" path="res://Shirt1/shirt_1.png" id="7_ueyq3"]
+[ext_resource type="Script" path="res://Shirt1/shirts.gd" id="8_7o6q3"]
+[ext_resource type="Texture2D" uid="uid://c460jbhoc05o6" path="res://Skirts/skirt_1.png" id="9_p40cu"]
+[ext_resource type="Script" path="res://Skirts/skirts.gd" id="10_mtiod"]
+[ext_resource type="Texture2D" uid="uid://ci1tdw76e5dy0" path="res://Skirts2/skirt_2.png" id="11_du1f3"]
+[ext_resource type="Script" path="res://Skirts2/skirt_2.gd" id="12_lmmms"]
+[ext_resource type="Texture2D" uid="uid://dyfyqiampk51s" path="res://Skirts3/skirt_3.png" id="13_snny2"]
+[ext_resource type="Script" path="res://Skirts3/skirt_3.gd" id="14_mpweq"]
+[ext_resource type="Texture2D" uid="uid://dkbi6erisqtl1" path="res://Hats/hat_1.png" id="15_5yof6"]
+[ext_resource type="Script" path="res://Hats/Hats.gd" id="16_sdloc"]
+[ext_resource type="Texture2D" uid="uid://by2ic2srjec5h" path="res://Hats2/baseball-hat-red.png" id="17_s8536"]
+[ext_resource type="Script" path="res://Hats2/hats_2.gd" id="18_kvshb"]
+[ext_resource type="Script" path="res://musicy.gd" id="19_b2o0f"]
+[ext_resource type="Script" path="res://button_component.gd" id="20_uwbcq"]
+[ext_resource type="Script" path="res://endgame_button.gd" id="21_64qiu"]
+
+[sub_resource type="Theme" id="Theme_w0ynq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_twppj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhipa"]
+
+[node name="Buttons" type="Node"]
+
+[node name="Shirts2" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+anchors_preset = -1
+anchor_left = -1.69097
+anchor_top = -0.12037
+anchor_right = -2.26562
+anchor_bottom = -0.932099
+offset_left = 2021.0
+offset_top = 152.0
+offset_right = 2889.0
+offset_bottom = 825.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("1_uek0w")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("2_1qksj")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Shirts3" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+anchors_preset = -1
+anchor_left = -0.598082
+anchor_top = 0.131173
+anchor_right = -1.23003
+anchor_bottom = -0.726852
+offset_left = 958.99
+offset_top = 4.0
+offset_right = 1826.99
+offset_bottom = 677.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("3_ry25f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_envuj")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Shirts4" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 607.0
+offset_top = 87.0
+offset_right = 724.0
+offset_bottom = 232.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("5_4xn8e")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("6_dbuow")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Shirts" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 446.0
+offset_top = 82.0
+offset_right = 568.0
+offset_bottom = 234.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("7_ueyq3")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("8_7o6q3")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Skirts" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+anchors_preset = -1
+anchor_left = -1.25954
+anchor_top = -0.523148
+anchor_right = -1.96093
+anchor_bottom = -1.35648
+offset_left = 1715.99
+offset_top = 253.0
+offset_right = 2646.99
+offset_bottom = 908.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("9_p40cu")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("10_mtiod")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Skirts2" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 446.0
+offset_top = -98.0
+offset_right = 568.0
+offset_bottom = 48.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("11_du1f3")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("12_lmmms")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Skirts3" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 122.0
+offset_top = -100.0
+offset_right = 245.0
+offset_bottom = 50.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("13_snny2")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("14_mpweq")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Hats" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = 285.0
+offset_top = -275.0
+offset_right = 397.0
+offset_bottom = -134.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uhipa")
+icon = ExtResource("15_5yof6")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("16_sdloc")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Hats2" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+anchors_preset = -1
+anchor_left = -0.0564236
+anchor_right = -0.0564236
+offset_left = 155.0
+offset_top = -257.0
+offset_right = 325.0
+offset_bottom = -165.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+icon = ExtResource("17_s8536")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("18_kvshb")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="MUSIC" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+anchors_preset = -1
+anchor_left = 0.0503472
+anchor_top = 0.0385802
+anchor_right = 0.0503472
+anchor_bottom = 0.0385802
+offset_left = -825.0
+offset_top = -447.0
+offset_right = -655.0
+offset_bottom = -355.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+text = "MUSIC"
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("19_b2o0f")
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonComponent" type="Button" parent="."]
+offset_left = 784.0
+offset_top = -24.0
+offset_right = 792.0
+offset_bottom = -16.0
+script = ExtResource("20_uwbcq")
+metadata/_edit_use_anchors_ = true
+
+[node name="EndgameButton" type="Button" parent="."]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+offset_left = -718.0
+offset_top = 275.0
+offset_right = -593.0
+offset_bottom = 418.0
+theme = SubResource("Theme_w0ynq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_twppj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("21_64qiu")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Shirts2" to="Shirts2" method="_on_button_down"]
+[connection signal="button_down" from="Shirts3" to="Shirts3" method="_on_button_down"]
+[connection signal="button_down" from="Shirts4" to="Shirts4" method="_on_button_down"]
+[connection signal="button_down" from="Shirts" to="Shirts" method="_on_button_down"]
+[connection signal="button_down" from="Skirts" to="Skirts" method="_on_button_down"]
+[connection signal="button_down" from="Skirts2" to="Skirts2" method="_on_button_down"]
+[connection signal="button_down" from="Skirts3" to="Skirts3" method="_on_button_down"]
+[connection signal="button_down" from="Hats" to="Hats" method="_on_button_down"]
+[connection signal="button_down" from="Hats2" to="Hats2" method="_on_button_down"]
+[connection signal="button_down" from="MUSIC" to="MUSIC" method="_on_button_down"]
+[connection signal="button_down" from="EndgameButton" to="EndgameButton" method="_on_button_down"]
