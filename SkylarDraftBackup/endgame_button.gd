@@ -18,6 +18,8 @@ func _on_button_down() -> void:
 	$"../../Bar".visible = false
 	$"../Music".visible = false
 	$"../../ThankYou".visible = true
+	$"../GobackButton".visible = true
+	$"../EndgameButton".visible = false
 	
 	
 	
