@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://414epyk0vcbs"]
+[gd_scene load_steps=17 format=3 uid="uid://414epyk0vcbs"]
 
 [ext_resource type="PackedScene" uid="uid://dgqkyxtk2ohfs" path="res://player.tscn" id="1_rpsyx"]
+[ext_resource type="Texture2D" uid="uid://bxik5c1lm8a70" path="res://thankyou.png" id="2_8o4bq"]
 [ext_resource type="PackedScene" uid="uid://gnxke32ibh8b" path="res://control.tscn" id="2_lnbkb"]
 [ext_resource type="Texture2D" uid="uid://d0w0obo1jac4o" path="res://Hats2/hat_2.png" id="2_s4v5d"]
 [ext_resource type="Script" path="res://Shirt5/shirt_5.gd" id="3_52mpy"]
@@ -27,6 +28,12 @@ position = Vector2(2, 2)
 [node name="PinkBack" parent="Player" index="1"]
 position = Vector2(0.999928, 3.00001)
 scale = Vector2(0.604685, 0.483011)
+
+[node name="ThankYou" type="Sprite2D" parent="Player/PinkBack" index="2"]
+visible = false
+position = Vector2(716.902, 18.6332)
+scale = Vector2(2.87718, 2.86713)
+texture = ExtResource("2_8o4bq")
 
 [node name="Shirts2" parent="Player/PinkBack/Buttons" index="0"]
 anchors_preset = 0
