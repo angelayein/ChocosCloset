@@ -29,6 +29,7 @@ position = Vector2(0.999928, 3.00001)
 scale = Vector2(0.604685, 0.483011)
 
 [node name="Shirts2" parent="Player/PinkBack/Buttons" index="0"]
+anchors_preset = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -39,6 +40,7 @@ offset_right = 497.0
 offset_bottom = 26.0006
 
 [node name="Shirts3" parent="Player/PinkBack/Buttons" index="1"]
+anchors_preset = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -59,7 +61,6 @@ offset_bottom = 206.0
 top_level = true
 light_mask = 3
 visibility_layer = 3
-anchors_preset = -1
 offset_left = 376.0
 offset_top = 59.0
 offset_right = 493.0
@@ -77,7 +78,6 @@ metadata/_edit_use_anchors_ = true
 top_level = true
 light_mask = 3
 visibility_layer = 3
-anchors_preset = -1
 offset_left = 567.0
 offset_top = 62.0
 offset_right = 684.0
@@ -98,6 +98,7 @@ offset_right = 304.0
 offset_bottom = 26.0
 
 [node name="Skirts" parent="Player/PinkBack/Buttons" index="6"]
+anchors_preset = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -143,6 +144,7 @@ offset_right = 492.0
 offset_bottom = -137.0
 
 [node name="Hats2" parent="Player/PinkBack/Buttons" index="11"]
+anchors_preset = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -157,7 +159,6 @@ icon = ExtResource("2_s4v5d")
 top_level = true
 light_mask = 3
 visibility_layer = 3
-anchors_preset = -1
 offset_left = 563.0
 offset_top = -252.0
 offset_right = 683.0
